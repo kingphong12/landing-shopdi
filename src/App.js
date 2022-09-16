@@ -1,8 +1,15 @@
+/** @format */
+
 import "./scss/app.scss";
 import { RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import BannerApp from "./images/banner/banner_app.png";
+import ValueImg from "./images/benefit/value_img.png";
+import Value from "./images/benefit/value.png";
+import Profit from "./images/benefit/profit_img.png";
+import Reward from "./images/benefit/reward_img.png";
+import Bullet from "./images/benefit/bullet.png";
 function App() {
   const [open, setOpen] = useState(false);
   const handleSibar = () => {
@@ -147,6 +154,93 @@ function App() {
 
                 <div className="banner_app">
                   <img src={BannerApp} alt="banner_app" className="app_image" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="benefit">
+            <div className="container">
+              <div className="benefit_container">
+                <h2 className="benefit_title">Lợi ích</h2>
+                <h3 className="benefit_subtitle">
+                  Tại sao bạn nên trở thành một
+                </h3>
+                <p className="benefit_name">Shopdi Connector</p>
+                <div className="benefit_box flex_reverse">
+                  <div className="benefit_box-content">
+                    <p className="content_title">
+                      Giá trị thực cho cộng đồng của bạn
+                    </p>
+                    <p className="content_sub">
+                      Shopdi là nền tảng Thương mại Điện tử Thế hệ Mới dành
+                      riêng cho sản phẩm cao cấp và sản phẩm phiên bản giới hạn.
+                      Thông qua cơ chế giá bí mật, giá bán của các sản phẩm trên
+                      Shopdi được quyết định bởi số lượng người quan tâm. Các
+                      sản phẩm được bán trên nền tảng thương mại điện tử Shopdi
+                      là hàng sản xuất chính hãng.
+                    </p>
+                  </div>
+
+                  <img src={Value} alt="" className="value_img" />
+                </div>
+
+                <div className="benefit_box flex_row-reverse ">
+                  <div className="benefit_box-content">
+                    <p className="content_title">Lợi nhuận hấp dẫn</p>
+                    <p className="content_sub">
+                      Nhận ngay lợi nhuận không giới hạn khi giới thiệu thành
+                      công người dùng click xem giá bí mật và giá giảm không
+                      giới hạn tại Shopdi. Giới thiệu càng nhiều, thu nhập càng
+                      khủng.
+                    </p>
+                  </div>
+
+                  <img
+                    src={Profit}
+                    alt=""
+                    className="profit_img profit_scale"
+                  />
+                </div>
+
+                <div className="benefit_box  flex_reverse">
+                  <div className="benefit_box-content">
+                    <p className="content_title">Nhiều phần thưởng hơn</p>
+                    <div className="content_item">
+                      <img src={Bullet} alt="" className="bullet_img" />
+                      <p className="content_sub">
+                        Nhận giải thưởng lên đến 30 triệu đồng mỗi tháng khi
+                        tham gia vào các chương trình đường đua F1
+                      </p>
+                    </div>
+
+                    <div className="content_item">
+                      <img src={Bullet} alt="" className="bullet_img" />
+                      <p className="content_sub">
+                        Tham gia các sự kiện độc quyền dành cho các Shopdi
+                        Connectors với nhiều phần quà hấp dẫn.
+                      </p>
+                    </div>
+                  </div>
+
+                  <img src={Reward} alt="" className="reward_img" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="policy">
+            <div className="container">
+              <div className="policy_container">
+                <div className="policy_heading">
+                  <h2 className="policy_titile">Chính sách</h2>
+                  <h3 className="policy_sub">Chính sách Shopdi Connector</h3>
+                </div>
+                <div className="policy_content">
+                  <p className="policy_text">
+                    Tỷ lệ hoa hồng lên đến 25%. Không giới hạn mức thu nhập bạn
+                    có thể kiếm được
+                  </p>
                 </div>
               </div>
             </div>

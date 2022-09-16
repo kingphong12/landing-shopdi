@@ -1,0 +1,139 @@
+/** @format */
+
+.benefit {
+  background-color: $heading-color;
+  padding: 9rem 0;
+
+  &_title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: calc(22 / 18);
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* Neutral Gray/1 */
+
+    color: $white-color;
+    text-align: center;
+    vertical-align: middle;
+
+    margin-bottom: 1.6rem;
+  }
+  &_subtitle {
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: calc(48 / 36);
+    /* or 133% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    /* Black & White/W */
+
+    color: #ffffff;
+  }
+  &_name {
+    background: linear-gradient(90deg, #ffe25a 100%, #f6c102 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: calc(48 / 36);
+    /* or 133% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  &_box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4.7rem 0;
+    @media (min-width: 62rem) {
+      &.flex_reverse {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+      }
+      &.flex_row-reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+      }
+
+      .value_img {
+        max-width: 100%;
+        position: absolute;
+        top: -10rem;
+        right: -10rem;
+        width: 71.2rem;
+        height: 71.2rem;
+      }
+      .profit_img {
+        position: absolute;
+        top: -14rem;
+        left: -15rem;
+        width: 71.2rem;
+      }
+      .reward_img {
+        max-width: 100%;
+        position: absolute;
+        top: -14rem;
+        right: -13rem;
+        width: 71.2rem;
+        height: 71.2rem;
+      }
+    }
+    &-content {
+      @media (min-width: 62rem) {
+        padding: 20.9rem 0;
+      }
+      .content_title {
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: calc(38 / 32);
+        /* or 137% */
+
+        letter-spacing: -0.02em;
+
+        /* gar */
+
+        background: linear-gradient(180deg, #ffe25a 0%, #f7c102 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 1.6rem;
+        @media (min-width: 62rem) {
+          margin-bottom: 3.2rem;
+        }
+      }
+      .content_sub {
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: calc(36 / 24);
+        /* or 150% */
+
+        letter-spacing: -0.02em;
+
+        /* Neutral Gray/3 */
+
+        color: $text-color;
+        @media (min-width: 62rem) {
+          max-width: 69.2rem;
+        }
+      }
+    }
+    .content_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0 1.6rem;
+    }
+  }
+
+  .profit_img {
+  }
+}
